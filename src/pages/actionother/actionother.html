@@ -1,0 +1,58 @@
+<ion-content>
+    <div style="height: 300px;">
+        <ion-slides pager>
+
+            <ion-slide class="imgboxlist">
+                <img style="height: 300px;" src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1527845077610&di=d7a4ae362d69dbcd5a77571f8120c855&imgtype=0&src=http%3A%2F%2Fwww.cnet99.com%2Fsoftware%2Fimages%2Fbanner.jpg">
+            </ion-slide>
+
+            <ion-slide class="imgboxlist">
+                <img style="height: 300px;" src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1527845091947&di=6d5ed2c777404613a7e3a6ca4979c785&imgtype=0&src=http%3A%2F%2Fimg14.3lian.com%2F201509%2F02%2Fc79da004fe66a5d3aa2ae42062dd5302.jpg">
+            </ion-slide>
+
+            <ion-slide class="imgboxlist">
+                <img style="height: 300px;" src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1527846058742&di=33a74bb7966a9a19e052854a35cb7c85&imgtype=0&src=http%3A%2F%2Fimg.c-c.com%2FTimg%2F2012%2F10%2F22%2F14%2Fdidu121440510135.jpg">
+            </ion-slide>
+
+        </ion-slides>
+    </div>
+
+    <div>
+        <ul class="nav">
+            <li>
+                <button ion-button  color="secondary" (click)="xingcheng()">
+                    <ion-icon name="cloud-upload"></ion-icon>
+                    行程
+                </button>
+            </li>
+            <li>
+                <button ion-button  color="twitter" (click)="jiayou()">
+                    <ion-icon name="speedometer"></ion-icon>
+                    加油
+                </button>
+            </li>
+            <li>
+                <button ion-button  color="dark" (click)="chuxian()">
+                    <ion-icon name="car"></ion-icon>
+                    出险
+                </button>
+            </li>
+            <li>
+                <button ion-button color="danger" (click)="weixiu()">
+                    <ion-icon name="cog"></ion-icon>
+                    维修
+                </button>
+            </li>
+        </ul>
+    </div>
+
+    <div>
+      <div class="tasklist" *ngFor="let item of listdata">
+        <div class="taskto">目的地：{{item.workpath}}</div>
+        <div class="taskfro">车 辆：{{item.cartid|mattDamon|async}}</div>
+        <div class="time">时 间：{{item.workdate}}</div>
+        <div class="users">任务号：{{item.markers}}</div>
+      </div>
+    </div>
+
+</ion-content>

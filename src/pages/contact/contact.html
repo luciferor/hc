@@ -1,0 +1,27 @@
+<ion-content>
+  <div class="phoneinfos">
+    <div class="phoneinfos-top">
+      <img [src]="apipath+'/images/logo.png'">
+    </div>
+    <div class="phoneinfos-title">回城货的内部通讯录</div>
+  </div>
+  <div class="phonelist"  *ngFor="let item of listdata">
+      <ion-list style="margin-bottom: 5px;">
+          <ion-item-sliding>
+            <ion-item>
+              <ion-avatar item-start>
+                <img [src]="apipath+item.userphoto">
+              </ion-avatar>
+              <h2>{{item.username}}</h2>
+              <p>{{item.userphone}}</p>
+            </ion-item>
+            <ion-item-options side="right">
+                <button ion-button color="secondary" (click)="callphone(item.userphone)">
+                <ion-icon name="call"></ion-icon>
+                拨打电话
+              </button>
+            </ion-item-options>
+          </ion-item-sliding>
+        </ion-list>
+  </div>
+</ion-content>

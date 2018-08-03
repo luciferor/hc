@@ -1,0 +1,41 @@
+<ion-header>
+    <ion-toolbar>
+        <ion-buttons start>
+            <button ion-button icon-only color="royal" (click)="goback()">
+                <ion-icon name="arrow-back"></ion-icon>
+            </button>
+        </ion-buttons>
+        <ion-title>出险上传</ion-title>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content>
+        <div>
+                <ion-item>
+                    <ion-label stacked>车牌号：</ion-label>
+                      <ion-select [(ngModel)]="carid" (ngModelChange)="switchType()"  interface="popover" style="height:45px;" placeholder="请选择">
+                        <ion-option value="0">请选择</ion-option>
+                        <div *ngFor="let typeData of listdata">
+                          <ion-option value="{{typeData?.carnumber}}">{{typeData?.carnumber}}</ion-option>
+                        </div>
+                      </ion-select>
+                </ion-item>
+                <ion-item>
+                    <ion-label fixed>出险时间：</ion-label>
+                    <ion-datetime displayFormat="YYYY-MM-DD" pickerFormat="YYYY-MM-DD" [(ngModel)]="cxtime"></ion-datetime>                 </ion-item>
+                <ion-item>
+                    <ion-label fixed>责任：</ion-label>
+                    <ion-input type="text" [(ngModel)]="cxrespons" placeholder="输入责任人"></ion-input>
+                </ion-item>
+                <ion-item>
+                    <ion-label fixed>其他备注：</ion-label>
+                    <ion-input type="text" [(ngModel)]="cxother" placeholder="输入其他备注"></ion-input>
+                </ion-item>
+            </div>
+            <div padding style="text-align: center;">
+                <button ion-button color="secondary" round (click)="savechuxianinfos()">
+                    <ion-icon name="cloud-upload"></ion-icon>
+                    &nbsp;&nbsp;保&nbsp;&nbsp;&nbsp;&nbsp;存
+                </button>
+            </div>
+</ion-content>

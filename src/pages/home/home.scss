@@ -1,0 +1,262 @@
+page-home {
+    .listbox{
+        border:1px solid rgb(233, 233, 233);
+        border-radius: 7px;
+        margin: 5px;
+        box-shadow:3px 3px 8px rgb(112, 112, 112);
+        height: 100px;
+        animation: 5s;
+        -webkit-animation: 5s;
+        -moz-animation: 5s;
+        -o-animation: 5s;
+    }
+
+    .listbox:hover{
+        background: rgb(226, 226, 226);
+    }
+
+    .listbox .topline{
+        height: 7px;
+        background: transparent;
+        border-radius: 7px 7px 0 0;
+    }
+
+    .listbox .listtitle{
+        height: 30px;
+        line-break: 30px;
+        font-size: 14px;
+        font-weight: bold;
+        color: rgb(68, 68, 68);
+        text-indent: 10px;
+    }
+
+    .listbox .listime{
+        text-indent: 10px;
+    }
+
+    .listbox .listaddr{
+        text-indent: 10px;
+        padding-top: 10px;
+    }
+
+
+
+    .newtaskbox{
+        border:1px solid rgb(233, 233, 233);
+        border-radius: 7px;
+        margin: 10px;
+        box-shadow:3px 3px 8px rgb(112, 112, 112);
+        animation: 5s;
+        -webkit-animation: 5s;
+        -moz-animation: 5s;
+        -o-animation: 5s;
+    }
+
+    .newtaskbox .tasktop{
+        height:160px;
+        background: rgb(190, 190, 190);
+        border-radius: 7px 7px 0 0;
+    }
+
+    .newtaskbox .tasktop .tasktop_name{
+        width:30%;
+        background: white;
+        height: 160px;
+        border-radius: 7px 0 0 0;
+        border-bottom: 1px dashed rgb(197, 197, 197);
+        float: left;
+        text-align: center;
+        line-height: 160px;
+        color:rgb(253, 253, 253);
+        font-weight: bold;
+        background: rgb(3, 187, 110);
+    }
+
+    .newtaskbox .tasktop .taskaddrtime{
+        width:70%;
+        background: white;
+        height: 160px;
+        border-radius:0 7px 0 0;
+        border-bottom: 1px dashed rgb(197, 197, 197);
+        float: right;
+    }
+
+    .newtaskbox .tasktop .taskaddrtime .tasktime{
+        height: 40px;
+        line-height: 40px;
+        font-weight: bold;
+        color: black;
+        text-indent: 10px;
+    }
+    .newtaskbox .tasktop .taskaddrtime .tasktime span{
+        color: rgb(179, 179, 179);
+        font-weight:lighter;
+        margin-right: 5px;
+    }
+
+
+    .newtaskbox .tasktop .taskaddrtime .taskaddr{
+        height: 40px;
+        line-height: 40px;
+        font-weight: bold;
+        color: black;
+        text-indent: 10px;
+    }
+
+    .newtaskbox .tasktop .taskaddrtime .taskaddr span{
+        color: rgb(179, 179, 179);
+        font-weight: lighter;
+        margin-right: 5px;
+    }
+
+    .newtaskbox .tasktop .taskaddrtime .taskaddrfrom {
+        height: 39px;
+        line-height: 39px;
+        font-weight: bold;
+        color: black;
+        text-indent: 10px;
+        border-top: 1px solid rgb(179, 179, 179);
+    }
+
+    .newtaskbox .tasktop .taskaddrtime .taskaddrfrom span{
+        color: rgb(179, 179, 179);
+        font-weight: lighter;
+        margin-right: 5px;
+    }
+
+    .newtaskbox .tasktop .taskaddrtime .taskaddrto{
+        height: 39px;
+        line-height: 39px;
+        font-weight: bold;
+        color: black;
+        text-indent: 10px;
+    }
+
+    .newtaskbox .tasktop .taskaddrtime .taskaddrto span{
+        color: rgb(179, 179, 179);
+        font-weight: lighter;
+        margin-right: 5px;
+    }
+
+
+    .newtaskbox .taskunder{
+        overflow: hidden;
+        padding: 10px;
+    }
+
+    .newtaskbox .taskunder .taskunder_left{
+        float: left;
+        text-align: right;
+        width: 20%;
+        color: rgb(133, 130, 130);
+        padding-right: 10px;
+    }
+
+    .newtaskbox .taskunder .taskunder_right{
+        float: right;
+        text-align: left;
+        width: 80%;
+    }
+
+
+    .newtaskbox .underbtn{
+        height: 50px;
+        background: rgb(52, 207, 5);
+        border-radius: 0 0 7px 7px;
+    }
+
+    .newtaskbox .underbtn button{
+        height:50px;
+        width:100%;
+        background:transparent;
+        text-align: center;
+        line-height: 50px;
+        font-weight: bold;
+        color:white;
+        font-size: 14px;
+        border-radius: 0 0 7px 7px;
+        -webkit-animation:butn 5s;
+        -o-animation: butn 5s;
+        -moz-animation: butn 5s;
+    }
+
+    .newtaskbox .underbtn button:hover{
+        background: red;
+    }
+
+    .newtaskbox .underbtner{
+        height: 50px;
+        background: rgb(233, 0, 19);
+        border-radius: 0 0 7px 7px;
+    }
+
+    .newtaskbox .underbtner button{
+
+    }
+
+    .newtaskbox .underbtner .btnleft{
+        height:50px;
+        width:50%;
+        background:transparent;
+        text-align: center;
+        line-height: 50px;
+        font-weight: bold;
+        color:white;
+        font-size: 14px;
+        border-radius: 0 0 0px 7px;
+        -webkit-animation:butn 5s;
+        -o-animation: butn 5s;
+        -moz-animation: butn 5s;
+        background: rgb(0, 177, 80);
+        float: left;
+    }
+
+    .newtaskbox .underbtner .btnright{
+        height:50px;
+        width:50%;
+        background:transparent;
+        text-align: center;
+        line-height: 50px;
+        font-weight: bold;
+        color:white;
+        font-size: 14px;
+        border-radius: 0 0 7px 0px;
+        -webkit-animation:butn 5s;
+        -o-animation: butn 5s;
+        -moz-animation: butn 5s;
+        background: rgb(255, 208, 0);
+        float: right;
+    }
+
+
+    .newtaskbox .underbtner .btnright:hover{
+        background: rgb(255, 5, 255);
+    }
+
+    .newtaskbox .underbtnerer{
+        height: 50px;
+        background: rgb(238, 238, 238);
+        border-radius: 0 0 7px 7px;
+    }
+
+    .newtaskbox .underbtnerer button{
+        height:50px;
+        width:100%;
+        background:transparent;
+        text-align: center;
+        line-height: 50px;
+        font-weight: bold;
+        color:white;
+        font-size: 14px;
+        border-radius: 0 0 7px 7px;
+        -webkit-animation:butn 5s;
+        -o-animation: butn 5s;
+        -moz-animation: butn 5s;
+    }
+
+    .newtaskbox .underbtnerer button:hover{
+        background: rgb(23, 34, 190);
+    }
+
+
+}

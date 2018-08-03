@@ -1,0 +1,88 @@
+
+<ion-content>
+
+
+
+  <ion-toolbar no-border-top [(ngModel)]="task">
+    <ion-segment color="danger" style="background:rgb(240, 240, 240);">
+      <ion-segment-button value="newtask" (click)="recivied()">
+        我的任务
+      </ion-segment-button>
+      <ion-segment-button value="finishedtask" (click)="finishedtaskes()">
+        所有任务
+      </ion-segment-button>
+    </ion-segment>
+  </ion-toolbar>
+
+
+<div [ngSwitch]="task">
+  <!--新任务-->
+  <div  *ngSwitchCase="'newtask'">
+      <div *ngFor="let item of listdata">
+          <div class="newtaskbox animated jello" >
+              <div class="tasktop">
+                <div class="tasktop_name">
+                  {{item.cartid|mattDamon|async}}
+                </div>
+                <div class="taskaddrtime">
+                  <div class="tasktime"><span>行程地点：</span>{{item.workpath}}</div>
+                  <div class="taskaddr"><span>总公里数：</span>{{item.totalkelomites}}</div>
+                  <div class="taskaddrfrom"><span>出车时间：</span>{{item.workkelomitest}}</div>
+                  <div class="taskaddrto"><span>收车时间：</span>{{item.workkelomiteed}}</div>
+                </div>
+              </div>
+              <div class="taskunder">
+                <div class="taskunder_left">
+                  时间段
+                </div>
+                <div class="taskunder_right">
+                  出车：{{item.timest}}<br />
+                  收车：{{item.timeed}}
+                </div>
+              </div>
+              <div class="underbtn">
+                <button (click)="recevesed(item.id)">查看详细</button>
+              </div>
+            </div>
+      </div>
+    </div>
+  <!--新任务-->
+
+
+  <!--已完成-->
+  <div  *ngSwitchCase="'finishedtask'">
+      <div *ngFor="let item of listdata">
+            <div class="newtaskbox animated jello" >
+              <div class="tasktop">
+                <div class="tasktop_name">
+                  {{item.cartid|mattDamon|async}}
+                </div>
+                <div class="taskaddrtime">
+                  <div class="tasktime"><span>行程地点：</span>{{item.workpath}}</div>
+                  <div class="taskaddr"><span>总公里数：</span>{{item.totalkelomites}}</div>
+                  <div class="taskaddrfrom"><span>出车公里：</span>{{item.workkelomitest}}</div>
+                  <div class="taskaddrto"><span>收车公里：</span>{{item.workkelomiteed}}</div>
+                </div>
+              </div>
+              <div class="taskunder">
+                <div class="taskunder_left">
+                  时间段
+                </div>
+                <div class="taskunder_right">
+                  出车：{{item.timest}}<br />
+                  收车：{{item.timeed}}
+                </div>
+              </div>
+              <div class="underbtnerer">
+                <button>编号：{{item.markers}}</button>
+              </div>
+            </div>
+
+      </div>
+    </div>
+
+  <!--已完成-->
+
+</div>
+
+</ion-content>

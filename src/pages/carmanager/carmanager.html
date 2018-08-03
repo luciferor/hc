@@ -1,0 +1,27 @@
+<ion-content>
+
+  <div>
+    <div  *ngFor="let item of listdata">
+        <div class="carlistbox">
+            <div class="carlistbox-top">
+              <div class="carlistbox-top-left"><span>粤B</span></div>
+              <div class="carlistbox-top-center">
+                  <div class="carlistbox-top-center-top">
+                      {{item.carnumber}}【{{item.carcolor}}】
+                  </div>
+                  <div class="carlistbox-top-center-under">
+                      {{item.carname}}-{{item.typeid}}
+                  </div>
+              </div>
+              <div class="carlistbox-top-right">
+                  {{item.carstatus}}
+              </div>
+            </div>
+            <div class="carlistbox-under">
+              更新时间：{{item.cartime}}
+            </div>
+        </div>
+    </div>
+    </div>
+
+</ion-content>

@@ -1,0 +1,55 @@
+<ion-header>
+    <ion-toolbar>
+        <ion-buttons start>
+            <button ion-button icon-only color="royal" (click)="goback()">
+                <ion-icon name="arrow-back"></ion-icon>
+            </button>
+        </ion-buttons>
+        <ion-title>行程上报</ion-title>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content>
+    <div>
+        <ion-item style="background:rgb(2, 209, 88);">
+            <ion-label stacked>车牌号：</ion-label>
+            <ion-select style="visibility: hidden;" [(ngModel)]="carid" (ngModelChange)="switchType()" interface="popover" style="height:45px;"
+                placeholder="请选择">
+                <ion-option value="0">请选择车辆</ion-option>
+                <div *ngFor="let typeData of listdata">
+                    <ion-option value="{{typeData?.carnumber}}">{{typeData?.carnumber}}</ion-option>
+                </div>
+            </ion-select>
+        </ion-item>
+        <ion-item>
+            <ion-label fixed>初始公里：</ion-label>
+            <ion-input type="text" [(ngModel)]="ststr" placeholder="输入公里数"></ion-input>
+        </ion-item>
+        <div padding style="text-align: center; background: rgb(233, 233, 233);">
+            <button ion-button color="secondary" round (click)="saveasinfos()">
+                <ion-icon name="cloud-upload"></ion-icon>
+                提交初始公里数
+            </button>
+        </div>
+        <ion-item>
+            <ion-label fixed>加油公里：</ion-label>
+            <ion-input type="text" [(ngModel)]="edstr" placeholder="输入加油时公里数"></ion-input>
+        </ion-item>
+        <div padding style="text-align: center; background: rgb(233, 233, 233);">
+            <button ion-button color="secondary" round (click)="saveoilkilometre()">
+                <ion-icon name="cloud-upload"></ion-icon>
+                提交加油时公里数
+            </button>
+        </div>
+        <ion-item>
+            <ion-label fixed>最后公里：</ion-label>
+            <ion-input type="text" [(ngModel)]="testr" placeholder="输入下班时公里数"></ion-input>
+        </ion-item>
+    </div>
+    <div padding style="text-align: center; background: rgb(233, 233, 233);">
+        <button ion-button color="secondary" round (click)="saveoutkilometre()">
+            <ion-icon name="cloud-upload"></ion-icon>
+            提交下班公里数
+        </button>
+    </div>
+</ion-content>

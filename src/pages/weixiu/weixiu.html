@@ -1,0 +1,51 @@
+<ion-header>
+    <ion-toolbar>
+        <ion-buttons start>
+            <button ion-button icon-only color="royal" (click)="goback()">
+                <ion-icon name="arrow-back"></ion-icon>
+            </button>
+        </ion-buttons>
+        <ion-title>维修上报</ion-title>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content>
+    <div>
+        <ion-item style="background: rgb(0, 221, 136);">
+            <!--ion-label fixed>车牌号：</ion-label-->
+        
+                      <ion-label stacked>车牌号：</ion-label>
+                      <ion-select [(ngModel)]="carid" (ngModelChange)="switchType()"  interface="popover" style="height:45px;" placeholder="请选择">
+                        <ion-option value="0">请选择</ion-option>
+                        <div *ngFor="let typeData of listdata">
+                          <ion-option value="{{typeData?.carnumber}}">{{typeData?.carnumber}}</ion-option>
+                        </div>
+                      </ion-select>
+            
+            <!--ion-input type="text" [(ngModel)]="carid" placeholder="输入车牌号"></ion-input-->
+        </ion-item>
+        <ion-item>
+            <ion-label fixed>维修价格：</ion-label>
+            <ion-input type="text" [(ngModel)]="wprice" placeholder="输入维修金额"></ion-input>
+        </ion-item>
+        <ion-item>
+            <ion-label fixed>维修项目：</ion-label>
+            <ion-input type="text" [(ngModel)]="wpro" placeholder="输入维修项目"></ion-input>
+        </ion-item>
+        <ion-item>
+            <ion-label fixed>维修时间：</ion-label>
+            <ion-datetime displayFormat="YYYY-MM-DD" pickerFormat="YYYY-MM-DD" [(ngModel)]="wxtime"></ion-datetime>  
+            <!--ion-input type="text" [(ngModel)]="wtime" placeholder="输入维修时间"></ion-input-->
+        </ion-item>
+        <ion-item>
+            <ion-label fixed>其他备注：</ion-label>
+            <ion-input type="text" [(ngModel)]="wother" placeholder="输入其他备注信息"></ion-input>
+        </ion-item>
+    </div>
+    <div padding style="text-align: center;">
+        <button ion-button color="secondary" round (click)="saveweixiuinfos()">
+            <ion-icon name="cloud-upload"></ion-icon>
+            &nbsp;&nbsp;保&nbsp;&nbsp;&nbsp;&nbsp;存
+        </button>
+    </div>
+</ion-content>

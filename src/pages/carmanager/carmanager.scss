@@ -1,0 +1,81 @@
+page-carmanager{
+    .carlistbox{
+        overflow: hidden;
+        border-radius: 7px;
+        margin:10px;
+        box-shadow:3px 3px 8px rgb(170, 170, 170);
+    }
+
+    .carlistbox .carlistbox-top{
+        height: 100px;
+        background: rgb(245, 245, 245);
+        border-radius: 7px 7px 0 0;
+    }
+
+    .carlistbox .carlistbox-top .carlistbox-top-left{
+        height: 100px;
+        text-align: center;
+        line-height: 100px;
+        width: 30%;
+        float: left;
+        padding-top: 15px;
+    }
+
+    .carlistbox .carlistbox-top .carlistbox-top-left span{
+        display:block;
+        text-align: center;
+        line-height: 70px;
+        border-radius: 35px;
+        margin: auto;
+        width:70px;
+        height: 70px;
+        background: rgb(255, 188, 43);
+        color: white;
+        font-weight: bold;
+        font-size: 22px;
+    }
+
+    .carlistbox .carlistbox-top .carlistbox-top-center{
+        float: left;
+        height: 100px;
+        width: 60%;
+    }
+
+    .carlistbox .carlistbox-top .carlistbox-top-center .carlistbox-top-center-top{
+        height: 49px;
+        line-height: 50px;
+        border-bottom:1px solid rgb(196, 196, 196);
+        color: black;
+        font-weight: bold;
+        font-size: 18px;
+    }
+
+    .carlistbox .carlistbox-top .carlistbox-top-center .carlistbox-top-center-under{
+        height: 50px;
+        line-height: 50px;
+        font-size: 16px;
+        color: gray;
+    }
+
+    .carlistbox .carlistbox-top .carlistbox-top-right{
+        float: left;
+        width: 10%;
+        height: 100px;
+        background: rgb(255, 113, 113);
+        padding: 20px 10px;
+        font-weight: bold;
+        font-size: 15px;
+        text-align: center;
+        color: white;
+    }
+
+    .carlistbox .carlistbox-under{
+        height:40px;
+        background: rgb(233, 233, 233);
+        line-height: 40px;
+        color: rgb(110, 110, 110);
+        border-radius: 0 0 7px 7px;
+        padding: 0 5px 0 5px;
+        border-top: 1px solid rgb(206, 206, 206);
+    }
+}

@@ -1,0 +1,71 @@
+page-register {
+    .logobox{
+        height: 150px;
+        text-align: center;
+        line-height: 150px;
+        font-size: 24px;
+    }
+
+    .logobox span{
+        color:rgb(22, 216, 64);
+    }
+
+    .inputbox{
+        text-align: center;
+        margin: auto;
+        width: 250px;
+    }
+
+    .inputbox .inputxt{
+        border:1px solid rgb(206, 206, 206);
+        border-radius: 20px;
+        width: 250px;
+        margin-top: 20px;
+        text-indent: 20px;
+        height: 40px;
+    }
+
+    .isremeber{
+        height: 30px;
+        line-height: 30px;
+        text-align: left;
+        padding: 0 5px 0 5px;
+        color:rgb(199, 199, 199);
+        margin: 10px auto 0px auto;
+        width: 100px;
+        margin-top: 30px;
+    }
+    .isremeber .ionchck{
+        float: left;
+    }
+
+    .isremeber .iontxt{
+        float: left;
+        height: 30px;
+        line-height: 22px;
+        margin-left: 5px;
+    }
+
+    .checkstyle{
+        text-align: center;
+        margin: auto;
+        margin-top:50px;
+    }
+
+  .btnbox{
+      margin: 10px auto 10px auto;
+      text-align: center;
+  }
+
+  .btnbox button{
+      width:150px;
+      text-align: left;
+  }
+
+  .copytxt{
+      margin-bottom: 0;
+      margin-top: 50px;
+      text-align: center;
+      color:rgb(207, 207, 207);
+  }
+}

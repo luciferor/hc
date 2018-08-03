@@ -1,0 +1,37 @@
+<ion-content>
+
+    <div class="logobox">
+        <span>注 册</span> | Register
+    </div>
+
+    <div class="inputbox">
+        <ion-input class="inputxt" type="text" [(ngModel)]="uphone" placeholder="输入手机号"></ion-input>
+        <ion-input class="inputxt" type="text" [(ngModel)]="uname" placeholder="输入姓名"></ion-input>
+        <ion-input class="inputxt" type="password" [(ngModel)]="upass" placeholder="输入密码"></ion-input>
+        <ion-input class="inputxt" type="password" [(ngModel)]="urepassword" placeholder="确认密码"></ion-input>
+    </div>
+
+
+    <div class="checkstyle">
+        <input type="checkbox">同意回城《
+        <span>服务使用条款</span>》
+    </div>
+
+
+    <div class="btnbox">
+        <button ion-button color="secondary" round (click)="regUser()">
+            <ion-icon name="person"></ion-icon>
+            &nbsp;&nbsp;注&nbsp;&nbsp;&nbsp;&nbsp;册
+        </button>
+    </div>
+    <div class="btnbox">
+        <button ion-button color="light" (click)="returnLogin()" round>
+            <ion-icon name="people"></ion-icon>
+            &nbsp;&nbsp;取&nbsp;&nbsp;&nbsp;&nbsp;消
+        </button>
+    </div>
+
+    <div class="copytxt">
+        回城货的&copy;版权所有
+    </div>
+</ion-content>

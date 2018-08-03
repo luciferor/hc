@@ -1,0 +1,109 @@
+page-actionother{
+    .mainbox{
+        overflow: hidden;
+        margin-top: 10px;
+    }
+
+    .mainbox .mainbox-left{
+        overflow: hidden;
+        float: left;
+        width: 45%;
+        margin: 0 8px;
+    }
+
+    .mainbox .mainbox-left button{
+        width: 98%;
+        height: 60px;
+        border-radius: 30px;
+    }
+
+    .mainbox .mainbox-right{
+        overflow: hidden;
+        float: left;
+        width: 45%;
+        margin: 0 5px;
+    }
+
+    .mainbox .mainbox-right button{
+        width:98%;
+        height: 60px;
+        border-radius: 30px;
+    }
+
+    .imgboxlist{
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+    }
+
+    .imgboxlist img{
+        max-width: 100%;
+        width: auto;
+        height: auto;
+        vertical-align: top;
+        border: 0;
+        width: 100%;
+        display: block;
+    }
+
+    .nav{ overflow: hidden; background: #fafafa; padding: 1rem 0;}
+    .nav li{ float: left; width: 25%; text-align: center;list-style: none;}
+    .nav li a{ color: #666;}
+    .nav li img{ width: 50%;}
+    .nav li p{ font-size: 1.5rem;}
+    .am-navbar-default .am-navbar-nav{ background: #fff;}
+
+    .tasklist{
+        border:1px solid rgb(233, 233, 233);
+        border-radius: 7px;
+        margin: 5px;
+        box-shadow:3px 3px 8px rgb(112, 112, 112);
+        animation: 5s;
+        -webkit-animation: 5s;
+        -moz-animation: 5s;
+        -o-animation: 5s;
+        margin-bottom: 10px;
+        overflow: hidden;
+    }
+
+    .tasklist .taskto{
+        font-size: 18px;
+        font-weight: bold;
+        color: #fafafa;
+        background: rgb(4, 212, 73);
+        border-radius:7px 7px 0 0;
+        height: 50px;
+        line-height: 50px;
+        text-indent: 10px;
+    }
+
+    .tasklist .taskfro{
+        text-indent: 10px;
+        color: #666;
+        height: 50px;
+        line-height: 50px;
+    }
+
+    .tasklist .time{
+        color:rgb(194, 192, 192);
+        text-indent: 10px;
+        height: 50px;
+        line-height: 50px;
+    }
+
+    .tasklist .users{
+        color: rgb(235, 235, 235);
+        text-align: right;
+        padding-right:10px;
+        height: 30px;
+        line-height: 30px;
+        font-weight: bold;
+        border-radius: 0 0 7px 7px;
+        background: rgb(216, 216, 216);
+    }
+}

@@ -1,0 +1,52 @@
+<ion-content>
+    <div class="userimgbox">
+        <img (click)="useASComponent()" [src]="path">
+    </div>
+    <div>
+        <ion-card>
+            
+
+            <ion-list>
+                <button ion-item (click)="editphone()">
+                    <ion-icon name="call" item-start></ion-icon>
+                    电话：{{userphone}}
+                </button>
+
+                <button ion-item (click)="editusername()">
+                    <ion-icon name="person" item-start></ion-icon>
+                    姓名：{{username}}
+                </button>
+
+                <button ion-item (click)="editage()">
+                    <ion-icon name="clipboard" item-start></ion-icon>
+                    年龄：{{userage}}
+                </button>
+
+                <button ion-item (click)="editdriage()">
+                    <ion-icon name="car" item-start></ion-icon>
+                    驾龄:{{userdriver}}
+                </button>
+
+                <button ion-item (click)="editpassword()">
+                    <ion-icon name="brush" item-start></ion-icon>
+                    修改密码
+                </button>
+
+                <button ion-item (click)="editother()">
+                    <ion-icon name="chatboxes" item-start></ion-icon>
+                    个性签名：{{userother}}
+                </button>
+
+            </ion-list>
+        </ion-card>
+    </div>
+    <div class="btnbox">
+        
+        <button ion-button color="light" (click)="logoff()" round>
+            <ion-icon name="people"></ion-icon>
+            &nbsp;&nbsp;注&nbsp;&nbsp;&nbsp;&nbsp;销
+        </button>
+        
+    </div>
+
+</ion-content>
